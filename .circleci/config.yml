@@ -14,6 +14,9 @@ jobs:
       - run:
           name: Docker php extensions install
           command: sudo docker-php-ext-install pdo_mysql
+      - run:
+          name: ls
+          command: ls -la
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "composer.json" }}
