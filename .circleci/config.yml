@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/php:7.4-node-browsers
-      - image: circleci/mysql:5.7
     environment:
       - DB_CONNECTION: circle_testing
     working_directory: ~/src
